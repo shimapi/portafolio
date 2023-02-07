@@ -1,2 +1,5 @@
 # portafolio
-maquetando mi portafolio, en html y css
+Maquetando mi portafolio.
+
+HTML
+SASS
