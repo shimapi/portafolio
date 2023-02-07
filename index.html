@@ -1,154 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
-    <script
-      src="https://kit.fontawesome.com/4b3786d927.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-    <title>Podcast Channel - Shirley Mallea</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/styles/normalize.css">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+
+  <title>Shirley Mallea · Web Developer · Portafolio</title>
 </head>
-<body> 
-    <header>
-        <nav class="desktop-menu"> 
-            <div class="logo">
-                <a href="#"><img src="./assets/logo.svg" alt="Logo Podcasts"></a>
-            </div>
-            <div class="links">
-                <ul>
-                    <li><a href="#episodios">Episodios</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#entrevistas">Entrevistas</a></li>
-                    <li><a href="#topicos">Tópicos</a></li>
-                </ul>
-            </div>
-        </nav>
+<body>
+  
+<div class="container">
+  <header>
+    <div class="header__logo">
+      <a href="#">
+        <img src="assets/images/logo-shirley-mallea-300.png" alt="Logo Shirley Mallea">
+      </a>
+    </div>
 
-        <nav class="mobile-menu">
-            <div class="logo">
-                <a href="#"><img src="./assets/logo.svg" alt="Logo Podcasts"></a>
-            </div>
-            <div class="links">
-                <input type="checkbox" id="hamburguesa" />
-                <label for="hamburguesa" class="burger-icon">
-                    <div class="change-icon"></div>
-                </label>
-                <div class="nav-menu-mobile">
-                    <div><a href="#episodios">Episodios</a></div>
-                    <div><a href="#nosotros">Nosotros</a></div>
-                    <div><a href="#entrevistas">Entrevistas</a></div>
-                    <div><a href="#topicos">Tópicos</a></div>
-                </div>
-            </div>
-        </nav>
-    </header>  
-    <section class="header">
-         <h1 data-end=".">Hello <span class="tachado">world</span> pale blue dot</h1>
-        <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días</p>
-        <button name="conoce" onclick="location.href='#nosotros'">Conocé más</button>
+    <navigation class="menu">
+      <ul class="list">
+        <li class="menu1">.</li>
+        <li class="menu2"><a href="#">Sobre mí</a></li>
+        <li class="menu3"><a href="#">Proyectos</a></li>
+        <li class="menu4"><a href="#">Conocimientos</a></li>
+        <li class="menu5"><a href="#">Contacto</a></li>
+        <li class="menu5"><a href="#">Referencias</a></li>
+        <li class="menu5"><a href="#">Formación</a></li>
+      </ul>
+    </navigation>
+  </header>
+  <main>
+    <section class="hello">
+      <h1>Hola, soy Shirley!</h1>
+      <h2>y soy Front End Developer</h2>
+      
+      <p>Passionate Pixel Perfect Programmer &hearts;</p>
+      <div class="photo">
+        <img src="" alt="" style="width: 300px; height: 300px; background-color: #ccc;">
+      </div>
+      <div class="rrss">
+        <a href="https://github.com/shimapi"><img src="" alt="GitHub" title="GitHub"></a>
+        <a href="https://www.linkedin.com/in/shirleymallea/"><img src="" alt="Linkedin" title="Linkedin"></a>
+        <a href="https://codepen.io/shimapi"><img src="" alt="CodePen" title="CodePen"></a>
+      </div>
     </section>
-    <main>
-        <a name="episodios"></a>
-        <section class="episodios">
-            <div class="bg-blue"></div>
-            <h2 class="white">Episodios</h2>
-            <div>
-                <iframe src="https://open.spotify.com/embed/episode/2SVbyeh5XNyFXzW8I5UBVC" width="100%" frameBorder="0" allowtransparency="true" scrolling="no" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed/episode/6hsx726cCgaCEBdmRM8BcL" width="100%" frameBorder="0" allowtransparency="true" scrolling="no" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed/episode/5e1bnrOR9siYGa6W23YNog" width="100%" frameBorder="0" allowtransparency="true" scrolling="no" allow="encrypted-media"></iframe>                
-                <iframe src="https://open.spotify.com/embed/episode/1Y2nvQjHafXofOu45g8Yu6" width="100%" frameBorder="0" allowtransparency="true" scrolling="no" allow="encrypted-media"></iframe>
-            </div>
-        </section>
-
-        <a name="nosotros"></a>
-        <div class="nosotros">
-            <div>
-                <div class="flex justify-center">
-                    <img src="./assets/phone.png" alt="Teléfono mostrando foto y artículo de 'The secret history of women in coding'">
-                </div>
-                <div>
-                    <h2>De dónde venimos</h2>
-                    <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
-                    <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-                </div>
-            </div>
-        </div>
-        <a name="entrevistas"></a>
-        <div class="galeria">
-            <h2>Invitadas/os estelares</h2> 
-            <div>
-                <img src="./assets/grace-hopper.png" alt="Grace Hooper">
-
-                <img src="./assets/katie-bouman.png" alt="Katie Bouman">
-
-                <img src="./assets/margaret-hamilton.png" alt="Margaret Hamilton">
-
-                <img src="./assets/era-univac.png" alt="An E.R.A.Univac 1103 computer in the 1950s">
-
-                <img src="./assets/computer.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
-
-                <img src="./assets/susan-kare.png" alt="Susan Kare">
-            </div>
-        </div>
-        <a name="topicos"></a>
-        <div class="temas">
-            <h2>Algunos de nuestros temas</h2> 
-            <div>
-                <div>
-                    <img src="./assets/icon1.svg" alt="Trabajo remoto">
-                    <h3>Trabajo remoto</h3>
-                </div>
-                <div>
-                    <img src="./assets/icon2.svg" alt="Repensando la programación">
-                    <h3>Repensando la programación</h3>
-                </div>
-                <div>
-                    <img src="./assets/icon3.svg" alt="Bases del código">
-                    <h3>Bases del código</h3>
-                </div>
-                <div>
-                    <img src="./assets/icon4.svg" alt="Seguridad informática">
-                    <h3>Seguridad informática</h3>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="novedades">
-            <div class="bg-blue"></div>
-            <div class="big">
-                <h2 class="white">¿Querés las últimas novedades?</h2>
-            
-                <button name="conoce" onclick="location.href='#episodios'">Escuchá los episodios</button>
-            </div>
-        </div>
-        <div class="barra">
-           <div class="copyright">© 2019— Hello blue pale dot</div> 
-           <div class="redes"> 
-                <a href="https://www.spotify.com/" target="_blank">
-                    <i class="fab fa-spotify"></i>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://telegram.org/" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                </a>
-           </div>
-        </div>
-    </footer>
+  </main>
+</div>
+  
 </body>
 </html>
