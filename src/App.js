@@ -3,11 +3,22 @@ import { EmojiEmotions , Settings, FileDownload } from '@mui/icons-material';
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import { styled } from "@mui/material";
 
 
 function App() {
+
+  const BlueButton = styled(Button)({
+    backgroundColor: "skyblue",
+    color: "yellow",
+    margin:10,
+    padding:20,
+
+  })
   return (
     <div>
+
+      <BlueButton>HOLA</BlueButton>
       <Button variant="text">Text</Button>
       <Button variant="contained" color="secondary">Contained</Button>
       <Button variant="outlined" disabled>Outlined</Button>
@@ -78,7 +89,12 @@ function App() {
       <Typography variant="caption" display="block" gutterBottom>
         caption text
       </Typography>
-      <Typography variant="overline" display="block" gutterBottom>
+      <Typography variant="overline" display="inline" 
+      sx={{
+        margin: 5,
+        color: "purple"
+      }}
+      >
         overline text
       </Typography>
     </Box>
