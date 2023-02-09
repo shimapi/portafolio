@@ -1,7 +1,7 @@
 
 
 import * as React from 'react';
-import { Container, Box, Typography, Button, Grid } from '@mui/material';
+import { Container, Box, Typography, Button } from '@mui/material';
 import MujerProgramando from "../images/mujer-programando.png"
 
 export default function Hola() {
