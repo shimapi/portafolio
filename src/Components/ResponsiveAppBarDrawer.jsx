@@ -37,14 +37,12 @@ function ResponsiveAppBarDrawer(props) {
       component="img"
       sx={{
         height: 44,
-        mr: 3,
+        m: 3
       }}
       alt="Shirley Mallea Pizarro"
       src={BlackLogo}>
         </Box>
-        <Typography variant="h6" sx={{ my: 3 }}> {/* LOGO EN DRAWER */}
-          SHIRLEY
-        </Typography>
+
       
       <Divider />
       <List>
@@ -65,13 +63,18 @@ function ResponsiveAppBarDrawer(props) {
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar component="nav">
-        <Toolbar>
+        <Toolbar
+                        sx={{
+                          display:'flex',
+                          justifyContent:  'space-between',
+                        }}
+                        >
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { md: 'none' } }}
           >
             <MenuIcon />
           </IconButton>
@@ -82,29 +85,12 @@ function ResponsiveAppBarDrawer(props) {
                 sx={{
                   height: 44,
                   display: { xs: 'flex', md: 'none' },
-                  mr: 5
+                  justifyContent: 'center',
                 }}
                 alt="Shirley Mallea Pizarro"
                 src={WhiteLogo}
             />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            mobile
-          </Typography>
+
 
 
 
@@ -134,7 +120,7 @@ function ResponsiveAppBarDrawer(props) {
             href=""
             sx={{
               mr: 2,
-              display: { xs: 'none', md: 'flex' },
+              display: { xs: 'none', lg: 'flex' },
               flexGrow: 1,
               fontFamily: 'monospace',
               fontWeight: 700,
@@ -143,19 +129,19 @@ function ResponsiveAppBarDrawer(props) {
               textDecoration: 'none',
             }}
           >
-            SHIRLEY desktop
+            SHIRLEY | portfolio
           </Typography>
 
 
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { xs: 'none', md: 'block' } }}
           >
 
 
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}> {/* MENU DESKTOP */}
+          <Box sx={{ display: { xs: 'none', md: 'block' } }}> {/* MENU DESKTOP */}
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }}>
                 {item}

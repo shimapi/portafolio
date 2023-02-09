@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
-import { Container } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 
 export default function Conocimientos() {
@@ -9,7 +9,8 @@ export default function Conocimientos() {
       <Box
         sx={{
           gap: 3,
-          justifyContent: 'space-between',
+          justifyContent: 'center',
+          alignContent: 'space-around',
           display: 'flex',
           flexWrap: 'wrap',
           bgcolor: 'background.paper',
@@ -19,31 +20,36 @@ export default function Conocimientos() {
           p:5
         }}
       >
-        <Button variant="contained">HTML</Button>
-        <Button variant="contained">CSS</Button>
-        <Button variant="contained">FLEXBOX</Button>
-        <Button variant="contained">GRID</Button>
-        <Button variant="contained">MATERIAL UI</Button>
-        <Button variant="contained">REACT</Button>
-        <Button variant="contained">JS</Button>
-        <Button variant="contained">GIT</Button>
-        <Button variant="contained">GitHub</Button>
-        <Button variant="contained">Firebase</Button>
-        <Button variant="contained">JSON</Button>
-        <Button variant="contained">Shopify</Button>
-        <Button variant="contained">Responsive Design</Button>
-        <Button variant="contained">SEO</Button>
-        <Button variant="contained">Notion</Button>
-        <Button variant="contained">Canva</Button>
-        <Button variant="contained">Trello</Button>
-        <Button variant="contained">Slack</Button>
-        <Button variant="contained">UX/UI</Button>
-        <Button variant="contained">REST APIs</Button>
-        <Button variant="contained">npm</Button>
-        <Button variant="contained">Liquid</Button>
-        <Button variant="contained">Responsive web design from Figma/Photoshop</Button>
-        <Button variant="contained">Adobe Suite</Button>
-        <Button variant="contained">Notion</Button>
+
+        <Typography variant="h5">
+          Conocimientos:
+        </Typography>
+
+        <Button variant="outlined">HTML</Button>
+        <Button variant="outlined">CSS</Button>
+        <Button variant="outlined">FLEXBOX</Button>
+        <Button variant="outlined">GRID</Button>
+        <Button variant="outlined">MATERIAL UI</Button>
+        <Button variant="outlined">REACT</Button>
+        <Button variant="outlined">JS</Button>
+        <Button variant="outlined">GIT</Button>
+        <Button variant="outlined">GitHub</Button>
+        <Button variant="outlined">Firebase</Button>
+        <Button variant="outlined">JSON</Button>
+        <Button variant="outlined">Shopify</Button>
+        <Button variant="outlined">Responsive Design</Button>
+        <Button variant="outlined">SEO</Button>
+        <Button variant="outlined">Notion</Button>
+        <Button variant="outlined">Canva</Button>
+        <Button variant="outlined">Trello</Button>
+        <Button variant="outlined">Slack</Button>
+        <Button variant="outlined">UX/UI</Button>
+        <Button variant="outlined">REST APIs</Button>
+        <Button variant="outlined">Node JS</Button>
+        <Button variant="outlined">Liquid</Button>
+        <Button variant="outlined">Responsive web design from Figma/Photoshop</Button>
+        <Button variant="outlined">Adobe Suite</Button>
+        <Button variant="outlined">Notion</Button>
 
         {/*HTML5|CSS|JS|React|GIT| GitHub | Firebase | JSON | Shopify | Responsive Design | SEO | Responsive web design from Figma/Photoshop | Adobe Illustrator | Canva | Notion | Trello | Slack | UX/UI | REST APIs | Liquid*/}
       </Box>

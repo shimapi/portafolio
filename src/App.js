@@ -5,6 +5,7 @@ import BasicGrid from './Components/BasicGrid';
 import ResponsiveAppBarDrawer from './Components/ResponsiveAppBarDrawer';
 import Hola from './Components/Hola';
 import Conocimientos from './Components/Conocimientos';
+import SobreMi from './Components/SobreMi';
 
 
 export default function MyApp() {
@@ -12,9 +13,9 @@ export default function MyApp() {
     <ScopedCssBaseline>
       <ResponsiveAppBarDrawer /> {/** menu */}
       <CssBaseline /> {/** no me acuerdo, pero era importante */}
-      <BasicGrid /> {/** contenido */}
       <Hola />
       <Conocimientos/>
+      <SobreMi/>
     </ScopedCssBaseline>
     
   );
