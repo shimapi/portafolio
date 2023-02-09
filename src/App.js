@@ -1,107 +1,19 @@
-import { Button } from "@material-ui/core";
-import { EmojiEmotions , Settings, FileDownload } from '@mui/icons-material'; 
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import { styled } from "@mui/material";
+import Button from '@mui/material/Button';
+import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
+import { LogoAppBar } from './Components/LogoAppBar';
 
 
-function App() {
-
-  const BlueButton = styled(Button)({
-    backgroundColor: "skyblue",
-    color: "yellow",
-    margin:10,
-    padding:20,
-
-  })
+export default function MyApp() {
   return (
-    <div>
-
-      <BlueButton>HOLA</BlueButton>
-      <Button variant="text">Text</Button>
-      <Button variant="contained" color="secondary">Contained</Button>
-      <Button variant="outlined" disabled>Outlined</Button>
-
-      <Button color="secondary"
-      startIcon={<EmojiEmotions />}>
-        Secondary
-        </Button>
-      <Button variant="contained" color="secondary"
-      startIcon={<Settings />}>
-          Success
-      </Button>
-      <Button variant="outlined" color="error">
-        Error
-      </Button>
-
-      <Button
-        variant="contained"
-        color="primary"
-        startIcon={<FileDownload />}>
-        Download Resume
-      </Button>
+    <ScopedCssBaseline>
+      <Button variant="outlined">Hello World</Button>
 
 
-
-    <Box sx={{ width: '100%', maxWidth: 500 }}>
-      <Typography variant="h1" gutterBottom>
-        h1. Heading
-      </Typography>
-      <Typography variant="h2" gutterBottom>
-        h2. Heading
-      </Typography>
-      <Typography variant="h3" gutterBottom>
-        h3. Heading
-      </Typography>
-      <Typography variant="h4" gutterBottom>
-        h4. Heading
-      </Typography>
-      <Typography variant="h5" gutterBottom>
-        h5. Heading
-      </Typography>
-      <Typography variant="h6" gutterBottom>
-        h6. Heading
-      </Typography>
-      <Typography variant="subtitle1" gutterBottom>
-        subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-        blanditiis tenetur
-      </Typography>
-      <Typography variant="subtitle2" gutterBottom>
-        subtitle2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-        blanditiis tenetur
-      </Typography>
-      <Typography variant="body1" gutterBottom>
-        body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-        blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur,
-        neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum
-        quasi quidem quibusdam.
-      </Typography>
-      <Typography variant="body2" gutterBottom>
-        body2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-        blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur,
-        neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum
-        quasi quidem quibusdam.
-      </Typography>
-      <Typography variant="button" display="block" gutterBottom>
-        button text
-      </Typography>
-      <Typography variant="caption" display="block" gutterBottom>
-        caption text
-      </Typography>
-      <Typography variant="overline" display="inline" 
-      sx={{
-        margin: 5,
-        color: "purple"
-      }}
-      >
-        overline text
-      </Typography>
-    </Box>
-
-
-    </div>
+      <LogoAppBar />
+    </ScopedCssBaseline>
+    
   );
 }
 
-export default App;
+
