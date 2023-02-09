@@ -7,9 +7,7 @@ export  function LogoAppBar() {
         <Toolbar>
             <Box
                 component="img"
-                sx={{
-                height: 64,
-                }}
+                sx={{height: 64}}
                 alt="Shirley Mallea Pizarro"
                 src={Logo2}
             />

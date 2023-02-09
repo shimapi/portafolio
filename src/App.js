@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
-import { LogoAppBar } from './Components/LogoAppBar';
+import  DrawerAppBar from './Components/ResponsiveAppBarDrawer';
 
 
 export default function MyApp() {
@@ -10,7 +10,6 @@ export default function MyApp() {
       <Button variant="outlined">Hello World</Button>
 
 
-      <LogoAppBar />
     </ScopedCssBaseline>
     
   );

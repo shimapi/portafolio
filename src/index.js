@@ -6,12 +6,14 @@ import App from './App';
 import { theme } from './theme';
 import ResponsiveAppBar from './Components/ResponsiveAppBar';
 import BasicGrid from './Components/BasicGrid';
+import DrawerAppBar from './Components/ResponsiveAppBarDrawer';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
   <ThemeProvider theme={theme}>
+    <DrawerAppBar />
     <ResponsiveAppBar />
     <CssBaseline />
     <BasicGrid />

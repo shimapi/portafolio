@@ -11,8 +11,9 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import LightDark from './LightDark';
+import Logo from "../images/white-isologo-shirley-mallea.png"
+
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Español', 'English'];
@@ -41,14 +42,23 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+           <Box
+                component="img"
+                sx={{
+                  height: 44,
+                  display: { xs: 'none', md: 'flex' },
+                  mr: 3
+                }}
+                alt="Shirley Mallea Pizarro"
+                src={Logo}
+            />
           <Typography
             variant="h6"
             noWrap
             component="a"
             href="/"
             sx={{
-              mr: 2,
+              mr: 5,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
@@ -57,7 +67,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            SHIRLEY
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -96,7 +106,16 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <Box
+                component="img"
+                sx={{
+                  height: 44,
+                  display: { xs: 'flex', md: 'none' },
+                  mr: 5
+                }}
+                alt="Shirley Mallea Pizarro"
+                src={Logo}
+            />
           <Typography
             variant="h5"
             noWrap

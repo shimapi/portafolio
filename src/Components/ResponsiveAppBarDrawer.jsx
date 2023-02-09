@@ -14,9 +14,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import WhiteLogo from "../images/white-isologo-shirley-mallea.png"
+import BlackLogo from "../images/black-isologo-shirley-mallea.png"
+
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = ['INICIO', 'SOBRE MI', 'PROYECTOS', 'CONTACTO', 'DESCARGAR CV'];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -28,9 +31,19 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
-      </Typography>
+      <Box
+      component="img"
+      sx={{
+        height: 44,
+        mr: 3,
+      }}
+      alt="Shirley Mallea Pizarro"
+      src={BlackLogo}>
+        </Box>
+        <Typography variant="h6" sx={{ my: 3 }}> {/* LOGO EN DRAWER */}
+          SHIRLEY
+        </Typography>
+      
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -60,20 +73,94 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
+
+
+          <Box
+                component="img"
+                sx={{
+                  height: 44,
+                  display: { xs: 'flex', md: 'none' },
+                  mr: 5
+                }}
+                alt="Shirley Mallea Pizarro"
+                src={WhiteLogo}
+            />
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href=""
+            sx={{
+              mr: 2,
+              display: { xs: 'flex', md: 'none' },
+              flexGrow: 1,
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            mobile
+          </Typography>
+
+
+
+
+
+
+
+
+
+            {/* MARCA MENU DESKTOP */}
+
+
+          <Box
+                component="img"
+                sx={{
+                  height: 44,
+                  display: { xs: 'none', md: 'flex' },
+                  mr: 5
+                }}
+                alt="Shirley Mallea Pizarro"
+                src={WhiteLogo}
+            />
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href=""
+            sx={{
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              flexGrow: 1,
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            SHIRLEY desktop
+          </Typography>
+
+
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+
+
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ display: { xs: 'none', sm: 'block' } }}> {/* MENU DESKTOP */}
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }}>
                 {item}
               </Button>
             ))}
           </Box>
+          {/* AQUI PONER LUZ/OSCURO*/}
         </Toolbar>
       </AppBar>
       <Box component="nav">
@@ -95,7 +182,8 @@ function DrawerAppBar(props) {
       </Box>
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
-        <Typography>
+        <Typography> {/* LIPSUM */}
+
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique unde
           fugit veniam eius, perspiciatis sunt? Corporis qui ducimus quibusdam,
           aliquam dolore excepturi quae. Distinctio enim at eligendi perferendis in
