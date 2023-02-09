@@ -1,15 +1,18 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
-import  DrawerAppBar from './Components/ResponsiveAppBarDrawer';
+import CssBaseline from '@mui/material/CssBaseline';
+import BasicGrid from './Components/BasicGrid';
+import ResponsiveAppBarDrawer from './Components/ResponsiveAppBarDrawer';
+import Hola from './Components/Hola';
 
 
 export default function MyApp() {
   return (
     <ScopedCssBaseline>
-      <Button variant="outlined">Hello World</Button>
-
-
+      <ResponsiveAppBarDrawer /> {/** menu */}
+      <CssBaseline /> {/** no me acuerdo, pero era importante */}
+      <BasicGrid /> {/** contenido */}
+      <Hola />
     </ScopedCssBaseline>
     
   );
