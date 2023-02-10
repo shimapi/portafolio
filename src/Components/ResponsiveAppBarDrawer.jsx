@@ -24,13 +24,7 @@ import LightDark from "./LightDark";
 import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
-const navItems = [
-  "INICIO",
-  "SOBRE MI",
-  "PROYECTOS",
-  "CONTACTO",
-  "DESCARGAR CV",
-];
+const navItems = ["Inicio", "SobreMi", "Proyectos", "Contacto", "DescargarCV"];
 
 function ResponsiveAppBarDrawer(props) {
   const { window } = props;
@@ -64,11 +58,13 @@ function ResponsiveAppBarDrawer(props) {
         ))}
       </List>
 
-      <MenuList>
-        <MenuItem component={Link} to="Contacto">
-          Contacto
+      {navItems.map((navItem) => (
+        <MenuItem key={navItem}>
+          <Typography textAlign="center">
+            <Link to={`/${navItem}`}>{navItem}</Link>
+          </Typography>
         </MenuItem>
-      </MenuList>
+      ))}
     </Box>
   );
 

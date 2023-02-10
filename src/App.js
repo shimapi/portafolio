@@ -1,13 +1,16 @@
 import * as React from 'react';
-import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
-import CssBaseline from '@mui/material/CssBaseline';
+import {CssBaseline,ScopedCssBaseline} from '@mui/material';
 import ResponsiveAppBarDrawer from './Components/ResponsiveAppBarDrawer';
-import Hola from './Components/Hola';
+/* import Hola from './Components/Hola';
 import Conocimientos from './Components/Conocimientos';
-import SobreMi from './Components/SobreMi';
-import Projects from './Components/Projects';
-import Footer from './Components/Footer'; 
-import ListRouter from './Components/ListRouter'; 
+import Projects from './Components/Projects'; */
+import SobreMi from './Pages/SobreMi';
+import Footer from './Components/Footer';
+import { Route, Routes } from 'react-router';
+import Contacto from './Pages/Contacto';
+import Home from './Pages/Home';
+import Proyectos from './Pages/Proyectos';
+import DescargarCV from './Pages/DescargarCV';
 
 
 export default function MyApp() {
@@ -15,13 +18,23 @@ export default function MyApp() {
     <ScopedCssBaseline>
       <ResponsiveAppBarDrawer /> {/** menu */}
 
-        <ListRouter />
+<br/>
+<br/>
+<br/>
 
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="Contacto" element={<Contacto/>}  />
+        <Route path="Proyectos" element={<Proyectos/>} />
+        <Route path="DescargarCV" element={<DescargarCV/>} />
+        <Route path="SobreMi" element={<SobreMi/>} />
+      </Routes>
+      
+      
       <CssBaseline /> {/** no me acuerdo, pero era importante */}
-      <Hola />
-      <Conocimientos/>
-      <SobreMi/>
-      <Projects/>
+      <br/>
+<br/>
+<br/>
       <Footer/>
     </ScopedCssBaseline>
     

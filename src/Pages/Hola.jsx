@@ -22,7 +22,7 @@ export default function Hola() {
             }}
           >
             <Typography variant="h4" sx={{ color: "text.secondary" }}>
-              Hola, mundo!
+              Hola mundo!
             </Typography>
             <Typography variant="h2" sx={{ color: "text.primary" }}>
               Soy Shirley, Web Developer
@@ -31,15 +31,15 @@ export default function Hola() {
             <Typography
               variant="h6"
               sx={{
-                color: "success.dark",
-                fontStyle: "italic",
-                fontWeight: "bold",
+                color: "primary.dark",
+                //fontStyle: "italic",
+                fontWeight: "normal",
                 my: 2,
                 maxWidth: 500,
               }}
             >
-              👩‍💻 Me encanta aprender, soy curiosa y amo explorar. Me encanta la
-              naturaleza.🍃
+              👩‍💻 Front End Developer. Me encanta aprender, soy curiosa y amo
+              explorar 🍃
             </Typography>
 
             <Box
