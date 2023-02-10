@@ -42,3 +42,8 @@ export default function ProjectCardTech() {
     </div>
   );
 }
+
+<Routes>
+  <Route path="Contacto" exact component={ContactoPage} />
+  <Route path="SobreMi" element={<SobreMi />} />
+</Routes>;

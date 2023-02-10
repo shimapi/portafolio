@@ -14,11 +14,14 @@ import {
   Typography,
   Toolbar,
   Button,
+  MenuList,
+  MenuItem,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import WhiteLogo from "../images/white-isologo-shirley-mallea.png";
 import BlackLogo from "../images/black-isologo-shirley-mallea.png";
 import LightDark from "./LightDark";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = [
@@ -60,6 +63,12 @@ function ResponsiveAppBarDrawer(props) {
           </ListItem>
         ))}
       </List>
+
+      <MenuList>
+        <MenuItem component={Link} to="Contacto">
+          Contacto
+        </MenuItem>
+      </MenuList>
     </Box>
   );
 
@@ -139,7 +148,7 @@ function ResponsiveAppBarDrawer(props) {
             {" "}
             {/* MENU DESKTOP */}
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
+              <Button key={item} href={item} sx={{ color: "#fff" }}>
                 {item}
               </Button>
             ))}

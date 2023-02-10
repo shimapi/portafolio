@@ -1,11 +1,11 @@
 import * as React from "react";
 import {
   Card,
-  CardActionArea,
   CardContent,
   Typography,
   CardMedia,
   Button,
+  Box,
 } from "@mui/material";
 
 export default function ProjectCardTech() {
@@ -17,9 +17,9 @@ export default function ProjectCardTech() {
         display: "inline-flex",
         flexFlow: "row wrap",
       }}
-      raised="true"
+      raised={true}
     >
-      <CardActionArea sx={{ display: "inline-flex", flexFlow: "row wrap" }}>
+      <Box sx={{ display: "inline-flex", flexFlow: "row wrap" }}>
         <CardMedia
           component="img"
           height="400px"
@@ -43,7 +43,7 @@ export default function ProjectCardTech() {
             display: "block",
           }}
         >
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography variant="h5" component="div">
             Reserva de Hoteles
           </Typography>
           <Typography variant="body2" color="text.secondary">
@@ -68,7 +68,7 @@ export default function ProjectCardTech() {
             Ver Detalles del proyecto
           </Button>
         </CardContent>
-      </CardActionArea>
+      </Box>
     </Card>
   );
 }
