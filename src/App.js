@@ -6,7 +6,7 @@ import Hola from './Components/Hola';
 import Conocimientos from './Components/Conocimientos';
 import SobreMi from './Components/SobreMi';
 import Projects from './Components/Projects';
-import ProjectCardTech from './Components/ProjectCardTech';
+import Footer from './Components/Footer';
 
 
 export default function MyApp() {
@@ -14,13 +14,11 @@ export default function MyApp() {
     <ScopedCssBaseline>
       <ResponsiveAppBarDrawer /> {/** menu */}
       <CssBaseline /> {/** no me acuerdo, pero era importante */}
-
-      <ProjectCardTech/> {/* Trabajando en la CARD */}
-
       <Hola />
       <Conocimientos/>
       <SobreMi/>
       <Projects/>
+      <Footer/>
     </ScopedCssBaseline>
     
   );
