@@ -14,7 +14,6 @@ import {
   Typography,
   Toolbar,
   Button,
-  MenuList,
   MenuItem,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -120,7 +119,7 @@ function ResponsiveAppBarDrawer(props) {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", lg: "flex" },

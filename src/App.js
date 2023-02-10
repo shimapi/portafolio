@@ -24,6 +24,7 @@ export default function MyApp() {
 
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="Inicio" element={<Home/>} />
         <Route path="Contacto" element={<Contacto/>}  />
         <Route path="Proyectos" element={<Proyectos/>} />
         <Route path="DescargarCV" element={<DescargarCV/>} />

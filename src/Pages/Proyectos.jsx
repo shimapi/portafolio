@@ -5,7 +5,7 @@ import { Container } from "@mui/material";
 export default function Proyectos() {
   return (
     <Container maxWidth="md">
-      <Button variant="contained">Proyectos</Button>
+      <Button variant="contained"> Proyectos</Button>
     </Container>
   );
 }
